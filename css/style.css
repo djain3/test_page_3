@@ -1,0 +1,249 @@
+body {
+    background-color: #f1f1f1;
+}
+
+/*HEADER*/
+#header {
+    border-top: 5px solid #fa6900;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    background-color: #69d2e7;
+    color: #ffffff !important;
+}
+
+.nav-button-gam {
+    border: 1px white solid;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.collapse a {
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+.nav-heigh{
+    padding-bottom: 20px;
+}
+.hello-text {
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.hello-text h1 {
+    font-size: 6rem;
+}
+
+.hello-text h6 {
+    font-size: 2rem;
+}
+
+/*HEADER*/
+
+/*ABOUTAS*/
+#about {
+}
+
+.element {
+    background-color: white;
+    margin-top: -80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#about p {
+    text-align: left;
+}
+/*ABOUTAS*/
+
+/*ABOUTUS2*/
+
+.ab-wrap {
+    padding-top: 65px;
+    font-weight: bolder;
+}
+
+/*ABOUTUS2*/
+
+
+
+/*SLIDER*/
+#slider {
+    padding-top: 50px;
+    background-color: #fa6900;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.left-photo,
+.right-photo{
+    opacity: 0.5;
+}
+
+.left-photo {
+
+}
+
+.right-photo {
+
+}
+
+.center-photo{
+    margin-left: -15%;
+    margin-right: -15%;
+    z-index: 2;
+}
+
+.photo {
+    height: 289px;
+    width: 445px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.slider-wrapper{
+    display: flex;
+}
+
+.sli-nav {
+    position: relative;
+    top: -150px;
+    color: black;
+    display: block;
+    z-index: 5;
+}
+
+.sli-nav a {
+}
+
+.prev {
+    margin-right: 150px;
+}
+
+.next {
+    margin-left: 150px;
+}
+
+/*SLIDER*/
+
+
+/*personal*/
+
+
+#Personal {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/*personal*/
+
+
+
+/*services*/
+#services {
+    background-image: url("../image/services.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#services h1 {
+    font-size: 2rem;
+}
+
+#services h2 {
+    font-size: 1.5rem;
+}
+
+#services p {
+
+}
+/*services*/
+
+
+/*contacts*/
+#contacts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.logo img {
+    padding-top: 10px;
+}
+.social {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.facebook {
+    display: flex;
+    height: 38px;
+    width: 38px;
+    background-image: url("../image/social.png");
+}
+
+.twitter {
+    display: flex;
+    height: 38px;
+    width: 38px;
+    background-image: url("../image/social.png");
+    background-position: -37px 0;
+}
+
+.pinterest {
+    display: flex;
+    height: 38px;
+    width: 38px;
+    background-image: url("../image/social.png");
+    background-position: -74px 0;
+}
+
+.instagram {
+    display: flex;
+    height: 38px;
+    width: 38px;
+    background-image: url("../image/social.png");
+    background-position: 38px 0;
+}
+
+.img-post {
+    display: block;
+    height: 93px;
+    width: 93px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+
+}
+
+#contacts h2 {
+    font-size: 1rem;
+}
+
+#lat-post h1 {
+    padding-bottom: 30px;
+}
+
+#lat-post h2 {
+    padding-bottom: 5px;
+}
+
+#lat-post .container {
+}
+/*contacts*/
+
+/*FOOTER*/
+#footer {
+    background-color: #69d2e7;
+    height: 68px;
+}
+
+#footer span {
+    color: #ffffff;
+}
+
+/*FOOTER END*/
