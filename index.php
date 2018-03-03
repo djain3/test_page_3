@@ -110,10 +110,11 @@
                 et dolore magna aliqua.</p>
         </div>
     </div>
-    <div class="container col-6 slider-wrapper justify-content-center">
-        <div class="container left-photo photo px-0"></div>
-        <div class="container center-photo photo px-0"></div>
-        <div class="container right-photo photo px-0"></div>
+    <div id="img-slider" class="container col-6 slider-wrapper justify-content-center">
+        <img src="" class="imghidden">
+        <img src="image/brouser_1.png" class="container left-photo photo px-0">
+        <img src="image/brouser_2.png" class="container center-photo photo px-0">
+        <img src="image/brouser_3.png" class="container right-photo photo px-0">
     </div>
     <div>
         <div class="sli-nav container text-center justify-content-center">

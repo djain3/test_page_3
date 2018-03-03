@@ -81,14 +81,6 @@ body {
     opacity: 0.5;
 }
 
-.left-photo {
-
-}
-
-.right-photo {
-
-}
-
 .center-photo{
     margin-left: -15%;
     margin-right: -15%;
@@ -98,11 +90,11 @@ body {
 .photo {
     height: 289px;
     width: 445px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
 }
+.photo img{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
 
 .slider-wrapper{
     display: flex;
@@ -127,6 +119,9 @@ body {
     margin-left: 150px;
 }
 
+.imghidden {
+    display: none;
+}
 /*SLIDER*/
 
 

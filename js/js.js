@@ -1,38 +1,36 @@
+/*получаем изображение*/
+/*из элемента id=img-slider*/
+var imgSlider = document.getElementById('img-slider');
+/*все элементы с тегом img*/
+var imgNumeric = imgSlider.getElementsByTagName('img');
+/*получаем количество слайдов*/
+/**/
+/*задаем номер первого слайда*/
 var slideIndex = 1;
 showSlides(slideIndex);
+/**/
 
+/*действие prev next*/
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
+/**/
+
+
 function showSlides(n) {
-    var slides = document.getElementsByClassName("photo");
-
-    if (n < 1) {
-        n = slides.length-1;
-        slideIndex = n;
-    }
-
-    if (n > slides.length-1) {
+    if (n > 1) {
+        imgNumeric[0].src = imgNumeric[1].src;
+        imgNumeric[1].src = imgNumeric[2].src;
+        imgNumeric[2].src = imgNumeric[3].src;
+        imgNumeric[3].src = imgNumeric[0].src;
         n = 1;
-        slideIndex = 1;
     }
-
-    if (n == 1) {
-        slides[slideIndex - 1].style.backgroundImage = 'url(image/brouser_3.png)';
-        slides[slideIndex].style.backgroundImage = 'url(image/brouser_1.png)';
-        slides[slideIndex + 1].style.backgroundImage = 'url(image/brouser_2.png)';
-    }
-
-    if (n == 2) {
-        slides[slideIndex - 2].style.backgroundImage = 'url(image/brouser_1.png)';
-        slides[slideIndex - 1].style.backgroundImage = 'url(image/brouser_2.png)';
-        slides[slideIndex].style.backgroundImage = 'url(image/brouser_3.png)';
-    }
-
-    if (n == 3) {
-        slides[slideIndex - 3].style.backgroundImage = 'url(image/brouser_2.png)';
-        slides[slideIndex - 2].style.backgroundImage = 'url(image/brouser_3.png)';
-        slides[slideIndex - 1].style.backgroundImage = 'url(image/brouser_1.png)';
+    if (n < 1) {
+        imgNumeric[3].src = imgNumeric[2].src;
+        imgNumeric[2].src = imgNumeric[1].src;
+        imgNumeric[1].src = imgNumeric[0].src;
+        imgNumeric[0].src = imgNumeric[3].src;
+        n = 1;
     }
 }
