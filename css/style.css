@@ -9,10 +9,7 @@ body {
     padding-bottom: 120px;
     background-color: #69d2e7;
     color: #ffffff !important;
-}
-
-#header div {
-
+    position: relative;
 }
 
 #header h1 {
@@ -23,19 +20,71 @@ body {
     font-size: 2.5rem;
 }
 
-#logo {
-    height: auto;
-    width: 100%;
-    vertical-align: center;
+.logo {
+    display: inline-flex;
+    text-align: center;
+    color: black;
+
+}
+.logo img {
+height: 50px;
+    width: 50px;
+    margin: auto 0;
+    padding: 0;
+    margin-right: 10px;
+}
+.logo p, .logo h5 {
+    padding: 0;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .logo p, .logo h5{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo p, .logo h5{
+        font-size: 0.8rem;
+    }
 }
 
 #menu-open {
     display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-center-open {
+    display: none;
     position: relative;
-    right: 350px;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    #menu-open.open {
+        display: inline-block;
+    }
+}
+
+#menu-center-open.open {
+    padding-top: 20px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    #menu-center-open.open {
+        display: none;
+    }
 }
 
 #menu-open a {
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+#menu-center-open a { text-align: center;
     padding-left: 10px;
     color: #ffffff;
 }
@@ -89,12 +138,13 @@ body {
     padding-top: 50px;
     background-color: #fa6900;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 }
 
 #img-slider {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
+    position: relative;
 }
 
 #img-slider img {
@@ -108,6 +158,26 @@ body {
     z-index: 3;
 }
 
+.prev,
+.next {
+    position: absolute;
+    z-index: 3;
+}
+
+.prev {
+    top: 50%;
+    left: 10px;
+}
+
+.next {
+    top: 50%;
+    right: 10px;
+}
+
+.prev img, .next img {
+    box-shadow: none !important;
+}
+
 .left-photo,
 .right-photo {
     opacity: 0.5;
@@ -115,13 +185,9 @@ body {
 }
 
 .center-photo {
-    margin-left: -20rem;
-    margin-right: -20rem;
+    margin-left: -15rem;
+    margin-right: -15rem;
     z-index: 2;
-}
-
-.prev,
-.next {
 }
 
 .imghidden {
@@ -145,49 +211,29 @@ body {
 
 .dot {
     cursor: pointer;
-    height: 13px;
-    width: 13px;
+    height: 20px;
+    width: 20px;
     margin: 0 10px;
     background-color: #b9bbbe;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.dot:active,
+
+.dot.active{
+    background-color: #69d2e7;
+}
+
 .dot:hover {
-background-color:#69d2e7;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: 0.4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4
-    }
-    to {
-        opacity: 1
-    }
+    background-color: #69d2e7;
 }
 
 /*personal*/
 
 /*services*/
 #services {
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-image: url("../image/services.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -210,21 +256,12 @@ background-color:#69d2e7;
 
 /*contacts*/
 #contacts {
-padding: 50px;
-}
-
-.logo img {
-    padding-top: 10px;
-}
-
-.rect {
-    display: block!important;
-height: 100%;
-    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .social {
-    display: flex;
+    display: inline-flex;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -260,39 +297,56 @@ height: 100%;
     background-position: 38px 0;
 }
 
-.img-post {
-    display: block;
-    height: 93px;
-    width: 93px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-
+.rect {
+ height: 30%;
 }
 
-#contacts h2 {
-    font-size: 1rem;
+@media (max-width: 768px) {
+    .rect {
+        display: none;
+    }
 }
 
-#lat-post h1 {
+.latest-post {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.post {
+    list-style: none;
+    padding: 0;
+}
+
+.post-rect {
+    display: inline-flex;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+
+
+.post h5 {
+ font-size: 1rem;
+}
+
+.post p {
+    font-size: 0.8rem;
+}
+
+#contacts h1 {
     padding-bottom: 30px;
 }
-
-#lat-post h2 {
-    padding-bottom: 5px;
-}
-
-#lat-post .container {
-}
-
 /*contacts*/
 
 /*FOOTER*/
 #footer {
+    display: block;
     background-color: #69d2e7;
-    height: 68px;
 }
 
-#footer span {
+#footer p {
+    padding-top: 20px;
     color: #ffffff;
 }
 

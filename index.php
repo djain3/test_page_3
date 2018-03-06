@@ -11,20 +11,31 @@
 
 
 <!--HEADER-->
-
 <section id="header">
 
-    <div class="row col-12">
-        <div class="container col-6 col-md-4 text-center">
-            <img id="logo" src="image/logo.png" alt="logo">
+    <div class="row offset-md-2 col-md-8 col-12 ">
+        <div class="logo container col-md-6 col-10">
+            <img src="image/logo.png" alt="logo">
+            <div>
+            <h5>Company Name</h5>
+            <p>Tag Line Goes Here</p>
+            </div>
         </div>
-        <div class="container col-2 text-md-right text-right">
-            <a id="menu" href="#" onclick=""><img src="image/menu.svg" alt="menu"></a>
+        <div class="container col-md-6 col-2 text-right">
+            <a id="menu" href="#"><img src="image/menu.svg" alt="menu"></a>
+            <div id="menu-open">
+                <a href="#header">Hello</a>
+                <a href="#about">About</a>
+                <a href="#slider">Slider</a>
+                <a href="#personal">Personal</a>
+                <a href="#services">Services</a>
+                <a href="#contacts">Contacts</a>
+            </div>
         </div>
-
     </div>
+
     <!--скрытый контент-->
-    <div class="row col-12 text-md-right text-center" id="menu-open">
+    <div class="row col-12 text-md-right text-center" id="menu-center-open">
         <a href="#">Hello</a>
         <a href="#about">About</a>
         <a href="#">Slider</a>
@@ -33,17 +44,15 @@
         <a href="#">Contacts</a>
     </div>
     <!--скрытый контент-->
-    <div class="col-md-6 col-12 container text-center hello-text">
+    <div class="col-md-8 col-12 container text-center hello-text">
         <h1><b>HELLO</b></h1>
         <h6><b>WE ARE ONLINE CLINIC</b></h6>
     </div>
 
-</section>
-
+</section> <!--Complete-->
 <!--HEADER-->
 
 <!--ABOUT-->
-
 <section id="about" class="col-md-8 col-12 container">
     <div class="container p-3 text-center">
         <h1><b>ABOUT US</b></h1>
@@ -54,14 +63,9 @@
             aliquip
             ex ea commodo consequat. </p>
     </div>
-</section>
-
-
+</section> <!--Complete-->
 <!--ABOUT-->
-
 <!--ABOUT2-->
-
-
 <section id="about-2" class="row justify-content-center">
 
     <div class="col-md-3 text-center">
@@ -79,17 +83,11 @@
         <p>Lorem ipsum dolor sit amet</p>
     </div>
 
-</section>
-
-
+</section> <!--Complete-->
 <!--ABOUT2-->
-
-
 <!--SLIDER-->
-
-
-<section id="slider">
-    <div class="col-12 text-center">
+<section id="slider" class="text-center">
+    <div class="offset-md-2 col-md-8 col-12 pt-4 pb-5">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
             et dolore magna aliqua.</p>
     </div>
@@ -98,22 +96,17 @@
         <img src="image/brouser_1.png" class="img-fluid left-photo photo">
         <img src="image/brouser_2.png" class="img-fluid center-photo photo">
         <img src="image/brouser_3.png" class="img-fluid right-photo photo">
-    </div>
-    <div id="navi-sli" class="container row col-12 text-center">
         <a class="prev col-4" onclick="plusSlides(-1)"><img src="image/arrow_prev.png" alt="prev"></a>
         <a class="next col-4" onclick="plusSlides(1)"><img src="image/arrow_next.png" alt="next"></a>
     </div>
-</section>
-
-
+</section> <!--Complete-->
 <!--SLIDER-->
-
-<section id="personal">
-    <div class="photo-slider col-12 text-center">
+<section id="personal"><!--arrow-->
+    <div class="photo-slider offset-2 col-md-8 col-12 text-center">
 
         <div class="photo-slide">
             <img src="image/photo.png" style="width:50%" alt="photo">
-            <h1>Alice G. Mullins</h1>
+            <h1>Nadya M. Mullins</h1>
             <h2>General Physician</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et
@@ -123,7 +116,7 @@
         </div>
         <div class="photo-slide">
             <img src="image/photo.png" style="width:50%" alt="photo">
-            <h1>Alice G. Mullins</h1>
+            <h1>Sophie V. Mullins</h1>
             <h2>Assistant</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et
@@ -142,15 +135,15 @@
                 ex ea commodo consequat.</p>
         </div>
     </div>
-    <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
+    <div class="offset-md-2 col-md-8 col-12 text-center">
+        <span class="dot active" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-</section>
-
+</section> <!--Complete-->
+<!--SERVICES-->
 <section id="services">
-    <div class="col-4 offset-1">
+    <div class="col-10 offset-1 offset-md-2 col-md-4 p-0">
         <div class="text-services">
             <h1>Lorem ipsum dolor sit amet</h1>
             <h2>Sed do eiusmod tempor</h2>
@@ -166,12 +159,20 @@
                 eos qui ratione voluptatem sequi nesciunt.</p>
         </div>
     </div>
-</section>
-
-<section id="contacts">
-    <div class="col-md-12 row">
-        <div class="col-12 offset-1 col-md-5">
-            <a class="logo" href="#"><img src="image/logo.png" alt="logo"></a>
+</section> <!--Complete-->
+<!--SERVICES-->
+<!--CONTACTS-->
+<section id="contacts"> <!--COMPLETE-->
+<div class="offset-md-2 col-md-10 text-md-left col-12 p-0 row">
+        <div class="col-md-4 offset-md-0 offset-1 col-10">
+            <div class="logo">
+                <img src="image/logo.png" alt="logo">
+                <div>
+                    <h5>Company Name</h5>
+                    <p>Tag Line Goes Here</p>
+                </div>
+            </div>
+            <br/>
             <div class="social">
                 <a class="facebook" href="#"></a>
                 <a class="twitter" href="#"></a>
@@ -194,48 +195,60 @@
                     laborum</p>
             </div>
         </div>
+        <!--CONTACTS-->
         <!--LATEST POST-->
-        <div class="col-12 offset-1 col-md-5">
+        <div class="col-md-6 offset-md-0 offset-1 col-10">
             <h1>Latest Post</h1>
-            <div class="row ">
-                <img class="rect col-3" src="image/rect.png" alt="rect">
-                <div class="col-9">
-                    <h5>Lorem ipsum dolor sit amet cons...</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="row ">
-                <img class="rect col-3" src="image/rect.png" alt="rect">
-                <div class="col-9">
-                    <h5>Lorem ipsum dolor sit amet cons...</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="row ">
-                <img class="rect col-3" src="image/rect.png" alt="rect">
-                <div class="col-8">
-                    <h5>Lorem ipsum dolor sit amet cons...</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua.</p>
-                </div>
-            </div>
-</section>
+            <ul class="latest-post">
+                <li class="post-rect"><img class="rect" src="image/rect.png" alt="rect">
+                    <ul class="post">
+                        <li>
+                            <h5>Lorem ipsum dolor sit amet cons...</h5>
+                        </li>
+                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore
+                            et
+                            dolore magna aliqua.</p></li>
+                    </ul>
+                </li>
+                <li class="post-rect"><img class="rect" src="image/rect.png" alt="rect">
+                    <ul class="post">
+                        <li>
+                            <h5>Lorem ipsum dolor sit amet cons...</h5>
+                        </li>
+                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore
+                            et
+                            dolore magna aliqua.</p></li>
+                    </ul>
+                </li>
+                <li class="post-rect"><img class="rect" src="image/rect.png" alt="rect">
+                    <ul class="post">
+                        <li>
+                            <h5>Lorem ipsum dolor sit amet cons...</h5>
+                        </li>
+                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore
+                            et
+                            dolore magna aliqua.</p></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--LATEST POST-->
+    </div>
+</section><!--COMPLETE-->
 <!--LATEST POST-->
 
 <section id="footer">
-    <div class="container justify-content-center">
-        <span>Terms of Use | Privacy & cookies</span>
-        <span>Copyright © 2016, All rights reserved.</span>
+    <div class="offset-md-2 col-md-8 col-10 offset-1 row text-center justify-content-between">
+        <p>Terms of Use | Privacy & cookies</p>
+        <p class="text-right">Copyright © 2016, All rights reserved.</p>
     </div>
-</section>
+</section><!--COMPLETE-->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -34,15 +34,16 @@ function showSlides(n) {
 /*MENU*/
 /**/
 $('#menu').click(function () {
-    if ($('#menu-open').css("display") == "none") {
-        $("#menu-open").css("display", "block");
+    if ($('#menu-open').hasClass("open")) {
+        $("#menu-open").removeClass("open");
+        $("#menu-center-open").removeClass("open");
     } else {
-        $('#menu-open').css("display", "none");
+        $("#menu-open").addClass("open");
+        $("#menu-center-open").addClass("open");
     }
 });
 /**/
 /*MENU*/
-
 
 var slideNum = 1;
 showPic(slideNum);
